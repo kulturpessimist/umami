@@ -21,7 +21,7 @@
     "build-mysql-schema": "prisma introspect -- --schema=./prisma/schema.mysql.prisma",
     "build-mysql-client": "prisma generate -- --schema=./prisma/schema.mysql.prisma",
     "build-postgresql-schema": "prisma introspect -- --schema=./prisma/schema.postgresql.prisma",
-    "build-postgresql-client": "prisma generate -- --schema=./prisma/schema.postgresql.prisma",
+    "build-postgresql-client": "prisma generate --schema=./prisma/schema.postgresql.prisma",
     
     "heroku-prebuild": "npm i; npm run build-postgresql-client",
     "heroku-postbuild": "npm run build"
