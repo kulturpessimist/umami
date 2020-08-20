@@ -8,7 +8,8 @@ const cfg = {
     password: con.password,
     database: con.pathname.substring(1),
     port: con.port,
-    host: con.hostname
+    host: con.hostname,
+    ssl: true
 }
 const sql = postgres(cfg) 
 const com = fs.readFileSync('./sql/schema.postgresql.sql')
